@@ -6,9 +6,21 @@
 		<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
 		<a-marker-camera preset='hiro'></a-marker-camera>
 		<a-assets>
-					<a-asset-item id="horse-obj" src="https://cdn.jsdelivr.net/gh/Nave0505/Multicolors-fair@master/Lamborghini_Aventador.obj"></a-asset-item>
-			    <a-asset-item id="horse-mtl" src="https://cdn.jsdelivr.net/gh/Nave0505/Multicolors-fair@master/Lamborghini_Aventador.mtl"></a-asset-item>
+					<a-asset-item id="horse-obj" src="https://cdn.jsdelivr.net/gh/Nave0505/Multicolors-fair@master/Lamborghini_Aventador.obj" material="color: red"></a-asset-item>
+			    <!--<a-asset-item id="horse-mtl" src="https://cdn.jsdelivr.net/gh/Nave0505/Multicolors-fair@master/Lamborghini_Aventador.mtl"></a-asset-item>
+					<!--<img id="my-image" src="https://cdn.jsdelivr.net/gh/Nave0505/Multicolors-fair@blob/master/Lamborginhi%20Aventador_diffuse.png"></img>-->
+
 </a-assets>
 <a-entity obj-model="obj: #horse-obj; mtl: #horse-mtl" scale="0.01 0.01 0.01"></a-entity>
+<a-animation attribute="rotation"
+						 dur="10000"
+						 fill="forwards"
+						 to="0 360 0"
+						 repeat="indefinite"></a-animation>
+
+
+<!--<a-image src="#my-image"></a-image>-->
+<!--<a-image src="https://cdn.jsdelivr.net/gh/Nave0505/Multicolors-fair@blob/master/Lamborginhi%20Aventador_diffuse.png"></a-image>-->
+
 	</a-scene>
 </body>
